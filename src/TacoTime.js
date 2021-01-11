@@ -71,6 +71,9 @@ export default class TacoTime extends Component {
     render() {
         return(
             <div style={basicSpacing}>
+            <div style={TacoButtonSpacing}>
+                    <button type="button" style={getTacoButton} onClick={ () => this.handleUpdateCondimentRecipe() }>Get New Taco</button>
+                </div>
             {this.state.apiTaco && Object.keys(this.state.apiTaco).map((layer, index) => 
                 <div key={index}>
                     <div style={layerStyle}>
@@ -84,7 +87,7 @@ export default class TacoTime extends Component {
             )}
                 <div style={TacoButtonSpacing}>
                     <button type="button" style={getTacoButton} onClick={ () => this.handleUpdateCondimentRecipe() }>Get New Taco</button>
-                    </div>
+                </div>
             </div>
         )
     }
