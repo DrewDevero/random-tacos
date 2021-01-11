@@ -21,6 +21,20 @@ const infoVal = {
 const basicSpacing = {
     margin: "1rem"
 }
+const TacoButtonSpacing = {
+    margin: "2.5rem 1rem 1rem 1rem",
+    display: "flex",
+    justifyContent: "center"
+}
+const getTacoButton = {
+    fontWeight: "bold",
+    color: "black",
+    outline: "none",
+    borderRadius: "20%",
+    padding: "1rem",
+    fontSize: "1.25rem",
+    background: "rgba(180, 180, 180, 0.85)"
+}
 
 export default class TacoTime extends Component {
 
@@ -48,6 +62,10 @@ export default class TacoTime extends Component {
 
     handleUpdateCondimentRecipe = () => {
         this.getAll();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
     }
 
     render() {
@@ -64,8 +82,8 @@ export default class TacoTime extends Component {
                     )}
                 </div>
             )}
-                <div style={basicSpacing}>
-                    <button type="button" onClick={ () => this.handleUpdateCondimentRecipe() }>Get New Taco</button>
+                <div style={TacoButtonSpacing}>
+                    <button type="button" style={getTacoButton} onClick={ () => this.handleUpdateCondimentRecipe() }>Get New Taco</button>
                     </div>
             </div>
         )
