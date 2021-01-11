@@ -47,8 +47,7 @@ export default class TacoTime extends Component {
     }
 
     handleUpdateCondimentRecipe = () => {
-        this.setState({...this.state.apiTaco, recipe : "100mg of deliciousness" })
-        console.log(this.state.apiTaco.recipe)
+        this.getAll();
     }
 
     render() {
@@ -66,7 +65,7 @@ export default class TacoTime extends Component {
                 </div>
             )}
                 <div style={basicSpacing}>
-                    <button type="button" onClick={ () => this.handleUpdateCondimentRecipe() }>Change Condiment Recipe</button>
+                    <button type="button" onClick={ () => this.handleUpdateCondimentRecipe() }>Get New Taco</button>
                     </div>
             </div>
         )
