@@ -19,7 +19,7 @@ function App() {
   return (
     <div style={mainDiv}>
       <div style={titleStyle}>
-        <h1 style={title} className="title">welcome to my site!</h1>
+        <h1 style={title} className="title">taco time!</h1>
       </div>
       <TacoTime />
     </div>
