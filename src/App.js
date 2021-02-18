@@ -34,7 +34,7 @@ function App() {
       </div>
       <TacoTime />
       <footer style={copyrightSpacing}>
-                <p style={copyright}>&copy; 2020 Alston Drew Devero-Belfon. The Tri-Sense phrase and logo are trademarks of Alston Drew Devero-Belfon.</p>
+                <p style={copyright}>&copy; 2020 Alston Drew Devero-Belfon.</p>
         </footer>
     </div>
   );
