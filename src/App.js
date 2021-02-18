@@ -6,6 +6,17 @@ const mainDiv = {
   background: "linear-gradient(135deg, rgba(40, 50, 255, 0.5), rgba(104, 104, 104, 0.5), rgba(40, 50, 255, 0.5))",
 }
 
+const copyrightSpacing = {
+  display: "flex",
+  justifyContent: "center"
+}
+
+const copyright = {
+  fontWeight: "bold",
+  fontSize: "16px",
+  margin: "8px"
+}
+
 const title = {
   textTransform: "capitalize",
   fontSize: "3rem"
@@ -22,6 +33,9 @@ function App() {
         <h1 style={title} className="title">taco time!</h1>
       </div>
       <TacoTime />
+      <footer style={copyrightSpacing}>
+                <p style={copyright}>&copy; 2020 Alston Drew Devero-Belfon. The Tri-Sense phrase and logo are trademarks of Alston Drew Devero-Belfon.</p>
+        </footer>
     </div>
   );
 }
